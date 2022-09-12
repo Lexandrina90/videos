@@ -12,6 +12,7 @@ class SearchBar extends React.Component {
 
         // Убедитесь, что мы вызываем 
         // обратный вызов из родительского компонента
+        this.props.onFormSubmit(this.state.term);
     };
 
     render() {
